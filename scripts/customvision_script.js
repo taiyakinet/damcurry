@@ -63,15 +63,15 @@ $(function () {
                 }
 
                 function floatFormat2( number ) {
-                    return Math.round( number *1000)/1000 ;
+                    return Math.round( number *100)/100 ;
                 }
 
 
                 var outputText =  "このダムカレーの形式は、<br>";
                 //outputText +=  tagName[0] + "です！<br>" + "信頼度は、 "+ floatFormat(probability[0])*100+ "%";
                 outputText +=  tagName[0] + " "+ floatFormat2(probability[0])*100+ "%<br>";
-                outputText +=  tagName[1] + " "+ floatFormat2(probability[1])*100+ "%<br>";
-                outputText +=  tagName[2] + " "+ floatFormat2(probability[2])*100+ "%<br>です！";
+                outputText +=  tagName[1] + " "+ floatFormat2(probability[1])*100+ "%<br>です！";
+           //     outputText +=  tagName[2] + " "+ floatFormat2(probability[2])*100+ "%<br>";
 
 
                 outputDiv.html(outputText);
